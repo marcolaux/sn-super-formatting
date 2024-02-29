@@ -1,0 +1,14 @@
+{
+    "identifier": "krst.super-formatting",
+    "name": "Super Formatting (latest)",
+    "content_type": "SN|Theme",
+    "area": "themes",
+    "main": "dist/dist.css",
+    "version": "0.3.1",
+    "description": "Theme agnostic toggle to adjust the margins of various elements of the Super Editor",
+    "url": "https://apps.laux.wtf/sn-super-formatting/dist/dist.css",
+    "download_url": "https://apps.laux.wtf/sn-super-formatting/sn-super-formatting.zip",
+    "latest_url": "https://apps.laux.wtf/sn-super-formatting/ext.json",
+    "marketing_url": "https://github.com/marcolaux/sn-super-formatting",
+    "layerable": true
+}

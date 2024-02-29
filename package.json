@@ -1,0 +1,29 @@
+{
+  "sn": {
+    "name": "Super Formatting (latest)",
+    "identifier": "krst.super-formatting",
+    "version": "0.1",
+    "content_type": "SN|Theme",
+    "area": "themes",
+    "main": "dist/dist.css",
+    "showInGallery": true,
+    "description": "Theme agnostic toggle to adjust the margins of various elements of the Super Editor",
+    "layerable": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:marcolaux/sn-super-formatting.git"
+  },
+  "dependencies": {
+    "chokidar-cli": "^3.0.0",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.0"
+  },
+  "scripts": {
+    "build:style": "node-sass src/main.scss dist/dist.css",
+    "build:deploy": "npm run deploy",
+    "watch": "CHOKIDAR_USEPOLLING=true chokidar src/*.scss -c \"npm run build:style && npm run deploy\" --initial",
+    "deploy": "./deploy.sh"
+  }
+}
